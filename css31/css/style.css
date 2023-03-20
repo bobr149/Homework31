@@ -1,0 +1,42 @@
+body {
+    background-color: gray;
+}
+
+.wrapper {
+    margin-top: 100px;
+    height: 200px;
+    width: 100%;
+    border: solid black 2px;
+}
+
+.title {
+    font-size: 3rem;
+    position: relative;
+    left: 15px;
+}
+
+.title::before {
+    content: "";
+    display: flex;
+    background-color: blue;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    position: absolute;
+    top: 25px;
+    right : 1845px;
+
+}
+
+.title::after {
+    content: "";
+    display: flex;
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: 210px;
+    position: absolute;
+    top: 25px;
+}
